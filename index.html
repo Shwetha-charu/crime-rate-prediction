@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crime Rate Prediction</title>
+</head>
+
+<body>
+
+<h2>Crime Rate Predictor</h2>
+
+<form action="/predict" method="post">
+
+Population:
+<input type="number" name="population"><br><br>
+
+Unemployment:
+<input type="number" name="unemployment"><br><br>
+
+Poverty:
+<input type="number" name="poverty"><br><br>
+
+Police:
+<input type="number" name="police"><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ result }}</h3>
+
+</body>
+</html>
